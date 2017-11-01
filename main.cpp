@@ -12,6 +12,21 @@
 #include "include/aeffectx.h"
 
 
+
+static intptr_t hostCallback( AEffect * _effect, int32_t _opcode,
+			      int32_t _index, intptr_t _value,
+			      void * _ptr, float _opt );
+
+intptr_t hostCallback( AEffect * _effect, int32_t _opcode,
+		       int32_t _index, intptr_t _value,
+		       void * _ptr, float _opt ) {
+
+  qDebug() << "hostCallback called with opcode: " << _opcode ;
+
+  return 0;
+}
+
+
 AEffect * m_plugin;
 
 

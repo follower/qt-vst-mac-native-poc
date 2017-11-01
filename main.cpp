@@ -26,6 +26,10 @@ int main(int argc, char *argv[]) {
 
     typedef AEffect * ( /* __stdcall */ * mainEntryPointer )( audioMasterCallback );
 
+    mainEntryPointer mainEntry = (mainEntryPointer) QLibrary::resolve(filepath, "VSTPluginMain");
+
+    qDebug() << "mainEntry found: " << mainEntry;
+
   }
 
 

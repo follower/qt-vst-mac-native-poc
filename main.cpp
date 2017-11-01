@@ -66,6 +66,14 @@ int main(int argc, char *argv[]) {
 
       qDebug() << "mainEntry() response: " << m_plugin;
 
+      if (m_plugin) {
+
+	qDebug() << "magic: " << m_plugin->magic;
+
+	qDebug() << "correct magic: " << (m_plugin->magic == kEffectMagic);
+
+      }
+
     }
 
 

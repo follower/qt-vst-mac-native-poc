@@ -8,6 +8,8 @@
 
 #include <QDebug>
 
+#include "include/aeffectx.h"
+
 
 int main(int argc, char *argv[]) {
 

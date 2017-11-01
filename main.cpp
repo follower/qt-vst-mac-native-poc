@@ -22,6 +22,9 @@ int main(int argc, char *argv[]) {
   if (!filepath.isEmpty()) {
     qDebug() << "filepath: " << filepath;
 
+
+    typedef AEffect * ( /* __stdcall */ * mainEntryPointer )( audioMasterCallback );
+
   }
 
 

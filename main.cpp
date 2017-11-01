@@ -12,6 +12,9 @@
 #include "include/aeffectx.h"
 
 
+AEffect * m_plugin;
+
+
 int main(int argc, char *argv[]) {
 
   qDebug("app: vster");

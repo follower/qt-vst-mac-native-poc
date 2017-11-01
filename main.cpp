@@ -48,6 +48,16 @@ int main(int argc, char *argv[]) {
 
     qDebug() << "mainEntry found: " << mainEntry;
 
+
+    if (mainEntry) {
+
+      m_plugin = mainEntry( hostCallback );
+
+      qDebug() << "mainEntry() response: " << m_plugin;
+
+    }
+
+
   }
 
 

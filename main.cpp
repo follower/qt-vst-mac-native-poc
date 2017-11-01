@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[]) {
 
-  qDebug("vster");
+  qDebug("app: vster");
 
   QCoreApplication app(argc, argv);
 

@@ -2,6 +2,8 @@
 // Configure with: CMAKE_PREFIX_PATH="$(brew --prefix qt55)" cmake .
 // Compile with: make
 
+// Run with: ./vster /Library/Audio/Plug-Ins/VST/u-he/TyrellN6.vst/Contents/MacOS/TyrellN6
+
 #include <QCoreApplication>
 
 int main(int argc, char *argv[]) {

@@ -10,5 +10,13 @@ int main(int argc, char *argv[]) {
 
   QCoreApplication app(argc, argv);
 
+  QString filepath = QCoreApplication::arguments().value(1);
+
+  if (!filepath.isEmpty()) {
+    qDebug() << "filepath: " << filepath;
+
+  }
+
+
   return app.exec();
 }

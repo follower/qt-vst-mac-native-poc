@@ -5,6 +5,7 @@
 // Run with: ./vster /Library/Audio/Plug-Ins/VST/u-he/TyrellN6.vst/Contents/MacOS/TyrellN6
 
 #include <QCoreApplication>
+#include <QLibrary>
 
 #include <QDebug>
 

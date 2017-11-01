@@ -23,6 +23,17 @@ intptr_t hostCallback( AEffect * _effect, int32_t _opcode,
 
   qDebug() << "hostCallback called with opcode: " << _opcode ;
 
+
+  switch( _opcode )
+  {
+    case audioMasterVersion:
+      return 2300;
+
+    default:
+      qDebug() << "unhandled opcode: " << _opcode;
+      break;
+  }
+
   return 0;
 }
 

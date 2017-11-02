@@ -72,6 +72,15 @@ int main(int argc, char *argv[]) {
 
 	qDebug() << "correct magic: " << (m_plugin->magic == kEffectMagic);
 
+	if (m_plugin->magic == kEffectMagic) {
+
+	  qDebug() << "";
+	  qDebug() << "numPrograms" << m_plugin->numPrograms;
+	  qDebug() << "numParams" << m_plugin->numParams;
+	  qDebug() << "numInputs" << m_plugin->numInputs;
+	  qDebug() << "numOutputs" << m_plugin->numOutputs;
+	  qDebug() << "";
+
       }
 
     }

@@ -81,6 +81,16 @@ int main(int argc, char *argv[]) {
 	  qDebug() << "numOutputs" << m_plugin->numOutputs;
 	  qDebug() << "";
 
+	  // From LMMS:
+	  for( int i = 0; i < m_plugin->numParams; ++i )
+	    {
+	      char paramName[32];
+	      memset( paramName, 0, sizeof( paramName ) );
+	      m_plugin->dispatcher( m_plugin, effGetParamName, i, 0, paramName, 0 );
+	      paramName[sizeof(paramName)-1] = 0;
+	      qDebug() << i << paramName << m_plugin->getParameter( m_plugin, i );
+	    }
+	}
       }
 
     }
